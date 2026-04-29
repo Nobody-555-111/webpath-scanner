@@ -79,5 +79,5 @@
 ### 1. Clone the repository (or download the script)
 
 ```bash
-git clone https://github.com/Nobody-555-111/webpath-scanner.git
+git clone https://github.com/Nobody-555-111/Dork-scanner.git
 cd webpath-scanner
