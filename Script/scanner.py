@@ -9,14 +9,13 @@ PAYLOAD_FILE = "payloads.txt"
 os.makedirs("results", exist_ok=True)
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Security Audit)"
+    "User-Agent" : "Mozilla/5.0 (Security Audit)"
 }
 
 with open(PAYLOAD_FILE, "r", encoding="utf-8", errors="ignore") as file:
     payloads = file.readlines()
-
-success_count = 0
-tested_count = 0
+success_count= 0
+tested_count= 0
 
 def extract_path_from_payload(line: str) -> str:
     line = re.sub(r'site:\S+', '', line).strip()
